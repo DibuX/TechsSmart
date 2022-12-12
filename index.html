@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fuentes -->
+    <link rel="stylesheet" href="css/fonts/fuentes.css" />
+    <!-- Bootstrap -->
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="fotos/logoT.png" type="image/x-icon" />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+     <!-- BoxIcons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Nav.JS -->
+    <title>TechSmart</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- NavBar -->
+  </head>
+  <body class="border-0">
+     <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-4" href="index.html">TechSmart</a>
+        <form class="d-flex m-2 w-25" role="search">
+          <input class="form-control me-2 bg-dark text-light buscador" type="search" placeholder="Buscar" aria-label="Search">
+        </form>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">TechSmart</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Mi Cuenta</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle sac" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorias
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Motherboards</a></li>
+                  <li><a class="dropdown-item" href="#">Procesadores</a></li>
+                  <li><a class="dropdown-item" href="#">Fuentes</a></li>
+                  <li><a class="dropdown-item" href="#">Memorias Ram</a></li>
+                  <li><a class="dropdown-item" href="#">Gabinetes</a></li>
+                  <li><a class="dropdown-item" href="#">Placas de video</a></li>
+
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2 buscador" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar-2 -->
+    <!-- <header>
+      <nav class="navbar2">
+        <a href="#" class="nav-brand">TechSmart</a>
+        <ul class="nav-menu">
+          <li class="nav-items">
+            <a href="#" class="nav-links">Inicio</a>
+          </li>
+          <li class="nav-items">
+            <a href="#" class="nav-links">Mi carrito</a>
+          </li>
+          <li class="nav-items">
+            <a href="login.html" class="nav-links">Mi Cuenta</a>
+          </li>
+        </ul>
+        <div class="drops">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header> -->
+
+    <!-- Carousel -->
+    <div
+      id="carouselExampleControls"
+      class="carousel slide carrusel-banner mt-3"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="30000">
+          <img
+            src="Fotos/asus-banner.jpg"
+            class="d-block w-100"
+            alt="Banner-Monitores"
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="30000">
+          <img
+            src="Fotos/banner-pc.jpg"
+            class="d-block w-100"
+            alt="Banner-PC-Armadas"
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="30000">
+          <img
+            src="Fotos/notebook-banner-pago.jpg"
+            class="d-block w-100"
+            alt="Banner-Cuotas"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev d-flex justify-content-start"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next d-flex justify-content-end"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Info -->
+    <section class="mt-4">
+      <div class="contenedor-info d-inline-flex mt-5 ms-3">
+        <h2 class="text-secondary">🔥 Productos destacados 🔥</h2>
+        <a href="#">Ver Más</a>
+      </div>
+    </section>
+
+    <!-- Slider Cards -->
+    <div
+      id="carouselExampleControls2"
+      class="carousel carousel-dark slide mx-3 mb-3"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="8000">
+          <div class="cards-wrapper">
+            <div class="card">
+              <div class="image-wrapper mt-1">
+                <img src="Fotos/gabinete1.png" alt="..." />
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Gabinete ASUS ROG STRIX Helios Aluminum Black RGB.
+                </p>
+                <button class="button-85" role="button">
+                  <a href="">Ver Más</a>
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image-wrapper mt-1">
+                <img src="Fotos/gabinete2.png" alt="Pure Base 500DX" />
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Gabinete Be Quiet! Pure Base 500DX White
+                </p>
+                <button class="button-85" role="button">
+                  <a href="500DX.html">Ver Más</a>
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image-wrapper mt-1">
+                <img src="Fotos/gabinete3.png" alt="GT501" />
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Gabinete ASUS TUF GT501 Vidrio Templado Black 3 x Coolers
+                </p>
+                <button class="button-85" role="button">
+                  <a href="GabineteASUStuf.html">Ver Más</a>
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image-wrapper mt-1">
+                <img src="Fotos/gabinete4.png" alt="Aerocool Playa" />
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Gabinete Gamer Aerocool Playa + 2 Fans Rbg Mid Tower Acuario
+                </p>
+                <button class="button-85" role="button">
+                  <a href="GabineteAerocool.html">Ver Más</a>
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image-wrapper mt-1">
+                <img src="Fotos/gabinete5.png" alt="Crystal 680X" />
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Gabinete Corsair Crystal 680X RGB TG Smart White
+                </p>
+                <button class="button-85" role="button">
+                  <a href="GabineteCorsair.html">Ver Más</a>
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image-wrapper mt-1">
+                <img src="Fotos/gabinete6.png" alt="MATREXX 70" />
+              </div>
+              <div class="card-body">
+                <p class="card-text">Gabinete Deepcool MATREXX 70 ADD-RGB 3F</p>
+                <button class="button-85" role="button">
+                  <a href="GabineteDeepcool.html">Ver Más</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="8000">
+          <div class="cards-wrapper mt-1">
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="Fotos/auris.png" alt="Cloud Flight Black" />
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Auriculares HyperX Cloud Flight Black Wireless.
+                </p>
+                <button class="button-85" role="button">
+                  <a href="AurisCloudFlight.html">Ver Más</a>
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image-wrapper mt-1">
+                <img src="Fotos/auris2.png" alt="Cloud Stinger" />
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Auriculares HP HyperX Cloud Stinger Gaming Negro PC | PS4 |
+                  Switch
+                </p>
+                <button class="button-85" role="button">
+                  <a href="AurisClouStinger.html">Ver Más</a>
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image-wrapper mt-1">
+                <img src="Fotos/auris3.png" alt="G635" />
+              </div>
+              <div class="card-body">
+                <p class="card-text">Auriculares Logitech G635 LightSync 7.1</p>
+                <button class="button-85" role="button">
+                  <a href="AurisG635.html">Ver Más</a>
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image-wrapper mt-1">
+                <img src="Fotos/auris4.png" alt="NS-AUG300C" />
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Auriculares Nisuta NS-AUG300C PS4 Camuflado Jungle
+                </p>
+                <button class="button-85" role="button">
+                  <a href="AurisNisuta.html">Ver Más</a>
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image-wrapper mt-1">
+                <img src="Fotos/auris5.png" alt="G733" />
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Auriculares Inalambricos Logitech G733 Lightspeed RGB Blue*
+                </p>
+                <button class="button-85" role="button">
+                  <a href="AurisG733.html">Ver Más</a>
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image-wrapper mt-1">
+                <img src="Fotos/auris6.png" alt="..." />
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Auriculares Redragon Pandora H350 RGB USB Surround 7.1
+                </p>
+                <button class="button-85" role="button">
+                  <a href="AurisRedragon.html">Ver Más</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="8000">
+          <div class="cards-wrapper">
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="Fotos/3070.png" alt="3070" />
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  S Placa de Video Zotac GeForce RTX 3070 Ti 8GB GDDR6X Trinity
+                </p>
+                <button class="button-85" role="button">
+                  <a href="PlacaRTX3070.html">Ver Más</a>
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="Fotos/3090.png" alt="3090" />
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Placa de Video Zotac GeForce RTX 3090 24GB GDDR6X Trinity
+                </p>
+                <button class="button-85" role="button">
+                  <a href="PlacaRTX3090.html">Ver Más</a>
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="Fotos/6700XT.png" alt="6700XT" />
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Placa de Video XFX Radeon RX 6700 XT BLACK 12GB GDDR6
+                  SPEEDSTER
+                </p>
+                <button class="button-85" role="button">
+                  <a href="PlacaRX6700.html">Ver Más</a>
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image-wrapper mt-1">
+                <img src="Fotos/6900XT.png" alt="6900XT" />
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Placa de Video ASUS Radeon RX 6900 XT 16GB GDDR6 ROG STRIX
+                </p>
+                <button class="button-85" role="button">
+                  <a href="PlacaRX6900.html">Ver Más</a>
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="Fotos/quadro.png" alt="Quadro" />
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Pny Tarjeta Gráfica Quadro RTX 4000 8GB GDDR6          
+                </p>
+                <button class="button-85" role="button">
+                  <a href="#">Ver Más</a>
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="Fotos/g210.png" alt="G210" />
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Placa de Video GeForce MSI G210 1GB DDR3 Low Profile
+                </p>
+                <button class="button-85" role="button">
+                  <a href="PlacaGeForce210.html">Ver Más</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev d-flex justify-content-start tamaño"
+        type="button"
+        data-bs-target="#carouselExampleControls2"
+        data-bs-slide="prev"
+      >
+        <span
+          class="carousel-control-prev-icon boton2"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next d-flex justify-content-end tamaño"
+        type="button"
+        data-bs-target="#carouselExampleControls2"
+        data-bs-slide="next"
+      >
+        <span
+          class="carousel-control-next-icon boton2"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+<!-- Info-Shop -->
+<div class="contenedor">
+    <div class="info-shop">
+      <div class="pago info-shop-p">
+        <i style="color: var(--info-shop)" class='bx bx-credit-card' ></i>
+        <h2 style="color: var(--info-shop)" >Método de pago</h2>
+        <p>
+          <span>Podés pagar con tarjeta, débito, efectivo o hasta 12 cuotas sin tarjeta.</span>
+        </p>
+      </div>
+      <div class="envio info-shop-p">
+        <i style="color: var(--info-shop)" class='bx bx-package'></i>
+        <h2 style="color: var(--info-shop)">Envíos gratis</h2>
+        <p>
+          <span>Envíos gratis a partir de los $10.000. Acumulá puntos y obtené beneficios.</span>
+        </p>
+      </div>
+      <div class="seguridad info-shop-p">
+        <i style="color: var(--info-shop)" class='bx bxs-check-shield'></i>
+        <h2 style="color: var(--info-shop)">Seguridad garantizada</h2>
+        <p>
+          <span>¿El producto no era lo que esperabas? Devolvelo, te damos 30 días para que hagas la devolución.</span>
+        </p>
+      </div>
+    </div>
+</div>
+    <!-- Footer -->
+    <footer class="pie">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="index.html">
+              <img src="Fotos/logoT.png" alt="Logo TechSmart" />
+            </a>
+          </figure>
+        </div>
+        <div class="box">
+          <h2>sobre nosotros</h2>
+          <p>
+            Somos una empresa de tecnología con un servicio de compra y venta minorista
+          </p>
+          <p>
+            Si querés saber más sobre nosotros <a href="About.html">Hacé click acá</a> y enterate las ultimas novedades
+          </p>
+        </div>
+        <div class="box">
+          <h2>seguinos</h2>
+          <div class="redes">
+            <a
+              href="https://m.facebook.com"
+              class="fa-brands fa-facebook face"
+            ></a>
+            <a
+              href="https://www.instagram.com/nico_roggiano/?hl=es-la"
+              class="fa-brands fa-instagram insta"
+            ></a>
+            <a
+              href="https://twitter.com/candedonadio"
+              class="fa-brands fa-twitter tw"
+            ></a>
+            <a
+              target="_blank"
+              href="https://youtu.be/dQw4w9WgXcQ"
+              class="fa-brands fa-youtube yt"
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small
+          >&copy; 2022 - <b>TechSmart</b> - Todos los derechos reservados
+          <i class="fa-solid fa-circle text-danger"></i> Candela Donadio -
+          Nicolas Roggiano <i class="fa-solid fa-circle text-danger"></i
+        ></small>
+      </div>
+     
+    </footer>
+    <script src="nav.js"></script>
+  </body>
+</html>

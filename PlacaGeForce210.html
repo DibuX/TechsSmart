@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+    rel="stylesheet"
+  />
+  <!-- Fuentes -->
+  <link rel="stylesheet" href="css/fonts/fuentes.css">
+  <link rel="shortcut icon" href="fotos/logoT.png" type="image/x-icon">
+  <link
+    href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+    rel="stylesheet"
+  />
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/gabinete.css">
+  <!-- BoxIcons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Gabinete</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body class="">
+    <nav class="navbar navbar-dark bg-dark mb-3">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-4" href="index.html">TechSmart</a>
+          <form class="d-flex m-2 w-25" role="search">
+            <input class="form-control me-2 bg-dark text-light" type="search" placeholder="Buscar" aria-label="Search">
+          </form>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">TechSmart</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Mi Carrito</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categorias
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Motherboards</a></li>
+                    <li><a class="dropdown-item" href="#">Procesadores</a></li>
+                    <li><a class="dropdown-item" href="#">Fuentes</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>   
+    <!-- PRODUCTO-->
+<div class="fullcontenedor ">
+        <div class="info1">
+          <h2> Placa de Video GeForce MSI G210 1GB DDR3 Low Profile</h2>
+          <hr style="border:2px dotted white;">
+          <img src="Fotos/g210.png" alt="">
+        </div>
+        <div class="info2">
+          <div class="precio text-center">
+            <span class="numero">$9.940</span>
+            <p><span class="texto">PRECIO DE LISTA:</span> $13.260</p>
+          </div>
+          <!-- <div class="pago text-center">
+                 summary
+                   <div class="forma-pago">
+                    <select name="" id="" required>
+                      <option value="" hidden>Seleccionar forma de pago</option>
+                      <option value="">Transferencia Bancaria - Depósito</option>
+                      <option value="">MercadoPago - Tarjetas Online, PagoFacil, RapiPago</option>
+                      <option value="">Tarjetas Visa, Mastercard o Cabal</option>
+                    </select>
+                  </div> 
+                </div> -->
+                <div class="select-menu">
+                  <div class="select-btn">
+                    <span class="sBtn-text">Selecionar Forma de Pago</span>
+                    <i class="bx bx-chevron-down" style="color: #fff;"></i>
+                  </div>
+
+                  <ul class="options">
+                    <li class="option">
+                      <i class='bx bxs-bank'></i>
+                      <span class="option-text">Transferencia Bancaria - Depósito</span>
+                    </li>
+                    <li class="option">
+                      <i class='bx bxl-paypal' style="color: #000d80;"></i>
+                      <span class="option-text">PayPal - Tarjetas Online</span>
+                    </li>
+                    <li class="option">
+                      <i class='bx bxs-credit-card' style="color: #e49708;"></i>
+                      <span class="option-text">Tarjetas Visa, Mastercard o Cabal</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="stock">
+                  <i class='bx bx-store-alt' style="color:greenyellow ;"></i>
+                  <p> Stock disponible</p>
+              
+                </div>
+                <div class="garantia">
+                  <i class='bx bx-check-shield' style="color: #e49708;"></i>
+                  <p>Garantía</p>
+                  <span>365 días</span>
+                </div>
+                <div class="retiro">
+                  <i class='bx bxs-package' style="color:white;"></i> 
+                  <p>Retiro</p>
+                  <span> ¡Gratis!</span>
+                </div>
+                <div class="envio">
+                  <i class='bx bxs-truck' style="color:white;"></i>
+                  <p>Envios a todo el país</p>
+                </div>
+                <BR></BR>
+                <div class="boton">
+                  <button class="button-65" role="button">AÑADIR AL CARRITO</button>
+        
+                </div>
+            </div> 
+  </div>
+  <div class="info3">
+    <h3>Especificaciones del producto</h3>
+    <div class="especificaciones d-flex">
+        <div class="general">
+            <h6>Tipo</h6><span>PCIe</span>
+            <h6>Chipset Gpu</h6><span>G 210</span>
+            <h6>Entrada Video</h6><span>No</span>
+            <h6>Doble Puente</h6><span>No</span>
+        </div>
+        <div class="conectividad d-block">
+            <h6>Vga</h6><span>1</span>
+            <h6>Dvi Digital</h6><span>0</span>
+            <h6>Hdmi</h6><span>1</span>
+        </div>
+        <div class="dimensiones d-block">
+            <h6>Ancho</h6><span>69 mm</span>
+            <h6>Alto</h6><span>145 mm</span>
+            <h6>Espesor</h6><span>1.0 slots</span>
+        </div>
+    </div>
+</div>  
+<!-- Footer -->
+<footer class="pie mt-3">
+  <div class="grupo-1">
+    <div class="box">
+      <figure>
+        <a href="index.html">
+          <img src="Fotos/logoT.png" alt="Logo TechSmart">
+        </a>
+      </figure>
+    </div>
+    <div class="box">
+      <h2>sobre nosotros</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, culpa!</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, culpa!</p>
+    </div>
+    <div class="box">
+      <h2>seguinos</h2>
+      <div class="redes">
+        <a href="https://m.facebook.com" class="fa-brands fa-facebook face"></a>
+        <a href="https://www.instagram.com/nico_roggiano/?hl=es-la" class="fa-brands fa-instagram insta"></a>
+        <a href="https://twitter.com/candedonadio" class="fa-brands fa-twitter tw"></a>
+        <a target="_blank" href="https://youtu.be/dQw4w9WgXcQ" class="fa-brands fa-youtube yt"></a>
+      </div>
+    </div>
+  </div>
+  <div class="grupo-2">
+    <small>&copy; 2022 - <b>TechSmart</b> - Todos los derechos reservados <i class="fa-solid fa-circle text-danger"></i> Candela Donadio - Nicolas Roggiano <i class="fa-solid fa-circle text-danger"></i></small>
+  </div>
+</footer> 
+<script src="script.js"></script>
+</body>
+</html>
