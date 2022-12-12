@@ -401,6 +401,9 @@ box-icon {
     flex-direction: column;
     flex-wrap: wrap;
   }
+  .fullcontenedor {
+    min-width: 90%;
+  }
 }
 
     
